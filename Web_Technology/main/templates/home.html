@@ -1,0 +1,39 @@
+{% extends "base.html"%}
+
+{% block content%}
+{% for post in posts %}
+    {% if post.priv==False or post.author==current_user %}
+    <h1>{{post.author.username}}</h1>
+
+
+
+
+    <img src="{{url_for('static',filename='assets/'+post.img)}}" width="64px">
+    <h1>{{post.content}}</h1>
+    
+
+
+
+    {% endif %}
+
+
+{% endfor%}
+
+
+
+
+
+
+
+<form action="" method="POST">
+    
+
+
+
+
+
+
+</form>
+
+
+{% endblock%}

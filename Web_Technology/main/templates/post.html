@@ -1,0 +1,36 @@
+{% extends "base.html"%}
+
+{% block content%}
+<form action="" method="POST" enctype="multipart/form-data">
+    {{ form.hidden_tag()}}
+
+    {{form.title.label()}}
+    {{form.title()}}
+
+    
+    
+    {{form.content.label()}}
+    {{form.content()}}
+
+    
+ 
+
+    {{form.picture.label()}}
+    {{form.picture()}}
+
+    {{form.priv.label()}}
+    {{form.priv()}}
+
+    {{form.submit()}}
+
+
+
+
+
+
+
+
+</form>
+
+
+{% endblock%}
